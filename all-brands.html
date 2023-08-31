@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ?? Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- ?? icons -->
+    <link href="/libs/icons/feather/feather-icons.min.css" rel="stylesheet" />
+    <!-- ?? Perfect scrollbar -->
+    <link href="/libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css" rel="stylesheet" />
+    <!-- ?? Swiper-->
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css" />
+    <!-- ?? CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+    <title>AdBuild | All brands</title>
+  </head>
+
+  <body id="page-top">
+    <div id="navbar"></div>
+    <section id="main_content">
+      <!-- ?? Breadcrumb -->
+      <div class="container">
+        <h6 class="text-body fw-bold my-3"><span class="fw-normal">Home </span> / All Brands</h6>
+      </div>
+      <!-- ?? Breadcrumb -->
+
+      <!-- ?? row Start-->
+      <div class="container">
+        <div id="content" class="row justify-content-center row-cols-2 row-cols-sm-2 row-cols-md-4 g-20px row-cols-xxl-6">
+          <div class="col">
+            <a href="/brand-products.html" class="shadow d-inline-block h-100 bg-white p-2">
+              <img src="/assets/images/brands/ (1).png" class="w-100 h-100" alt="brand image" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ?? row End-->
+    </section>
+    <div id="footer"></div>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.js"></script>
+
+    <script src="/libs/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      for (let i = 2; i <= 45; i++) {
+        $('#content').append(`
+            <div class="col">
+                  <a href="/brand-products.html" class="shadow d-inline-block h-100 bg-white p-2">
+                    <img src="/assets/images/brands/ (${i}).png" class="w-100 h-100"  alt="brand image">
+                    </a>
+            </div>
+            `);
+      }
+    </script>
+
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+    <script>
+      $('#navbar').load('/components/navbar.html');
+      $('#footer').load('/components/footer.html');
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+  </body>
+</html>

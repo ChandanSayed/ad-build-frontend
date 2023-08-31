@@ -1,0 +1,12 @@
+.custom_tabs{
+    .active{
+        color: $dark;
+    }
+    
+    .nav-link{
+        cursor: pointer;
+        &:hover{
+            color: $dark;
+        }
+    }
+}

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ?? Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- ?? icons -->
+    <link href="/libs/icons/feather/feather-icons.min.css" rel="stylesheet">
+    <!-- ?? Perfect scrollbar -->
+    <link href="/libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- ?? Swiper-->
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css" />
+    <!-- ?? CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <title>
+        AdBuild | Cart
+    </title>
+</head>
+
+<body id="page-top">
+
+    <div id="navbar">
+
+    </div>
+    <section id="main_content">
+        <!-- ?? cart header -->
+        <div class="container">
+            <div class="wizard_indicator my-60px">
+                <div class="wizard_item done">
+                    <span class="icon abicon-bag">
+
+                    </span>
+                    <span class="text">1.My cart</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item done">
+                    <span class="icon abicon-Car-Delivery">
+
+                    </span>
+                    <span class="text">2. Shipping info</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item active">
+                    <span class="icon abicon-card-pos">
+
+                    </span>
+                    <span class="text">3. Payment</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item">
+                    <span class="icon abicon-tick-circle">
+
+                    </span>
+                    <span class="text">4. Complete</span>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- ?? cart header -->
+
+        <!-- ?? row Start-->
+        <div class="container" style="max-width: 1000px;">
+            <div class="row mb-5">
+                <div class="col-12 col-lg-7">
+                    <div class="card rounded-6px">
+                        <div class="card-body d-grid">
+                            <h5 class="fw-bolder text-primary">Wire Transfer</h5>
+
+                            <div
+                                class="d-flex flex-column align-items-end p-4 gap-16px align-self-stretch border rounded-3 mt-16px">
+
+                                <div class="d-flex flex-column align-items-start gap-2 w-100 row-cols-1">
+                                    <div>
+                                        <label for="bank_name" class="form-label mb-1">Bank Name</label>
+                                        <input type="text" class="form-control custom-form-control" id="bank_name"
+                                            placeholder="CIB Bank">
+                                    </div>
+
+                                    <div>
+                                        <label for="account__number" class="form-label mb-1">Beneficiary Account
+                                            Number</label>
+                                        <input type="text" class="form-control custom-form-control" id="account__number"
+                                            placeholder="123456748913">
+                                    </div>
+
+                                    <div>
+                                        <label for="recipient_name" class="form-label mb-1">Recipient's name</label>
+                                        <input type="text" class="form-control custom-form-control" id="recipient_name"
+                                            placeholder="Recipient's name">
+                                    </div>
+
+                                    <div>
+                                        <label for="IBAN" class="form-label mb-1">IBAN</label>
+                                        <input type="text" class="form-control custom-form-control" id="IBAN"
+                                            placeholder="4564-4546-4579-4546-4546-1232-1234">
+                                    </div>
+                                </div>
+
+                                <a data-bs-toggle="modal" data-bs-target="#complete_order"
+                                    class="btn btn-primary w-100">Complete Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div class="card sticky-lg-top  rounded-6px">
+                        <div class="card-body">
+                            <div
+                                class="d-flex border-bottom pb-3 mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Subtotal
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $316.80
+                                </span>
+                            </div>
+
+                            <div class="d-flex mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Tax Total
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $114.50
+                                </span>
+                            </div>
+
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Add Coupon Code"
+                                    aria-label="Button" aria-describedby="">
+                                <button class="btn btn-outline-primary" type="button" id="">
+                                    Add
+                                </button>
+                            </div>
+
+
+                            <div
+                                class="d-flex border-bottom pb-3 mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Coupon Offer
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    -$431.30
+                                </span>
+                            </div>
+                            <div class="d-flex mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Total
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $1431.30
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ?? row End-->
+
+
+        <!-- Complete Order Modal -->
+        <div class="modal fade" id="complete_order" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content  bg-body">
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-items-end p-4 gap-16px align-self-stretch">
+                            <div class="d-flex flex-column align-items-start gap-2 w-100 row-cols-1">
+                                <div>
+                                    <label for="" class="form-label mb-3">Please Upload proof of payment</label>
+                                    <div class="p-3 border rounded-3 bg-white">
+                                        <div class="file-drop-area">
+                                            <img class="icon" src="/assets/images/svg/Upload.svg" alt="">
+
+                                            <span class="file-msg text-info">upload a file</span>
+                                            <span class="file-msg fs-0_875rem">Attachments: (.jpg, .png, .pdf)</span>
+                                            <input class="file-input" type="file" multiple="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <a onclick="successPayment()" class="btn btn-primary w-100">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div id="footer">
+
+    </div>
+
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.js"></script>
+    <script src="assets/js/sweetalert2.all.js"></script>
+
+    <script>
+        function successPayment() {
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-lg btn-primary me-10px',
+                    cancelButton: 'btn btn-lg btn-primary'
+                },
+                buttonsStyling: false
+            })
+
+            swalWithBootstrapButtons.fire({
+                title: `Thanks Transaction is pending waiting admin approve`,
+                iconHtml: `<img src="/assets/images/img/auction/auction-home/success.svg" alt="">`,
+                showCancelButton: false,
+                confirmButtonText: 'Done',
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    // When click Done
+
+                } 
+            })
+        }
+    </script>
+
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+    <script>
+        $('#navbar').load('/components/navbar.html')
+        $('#footer').load('/components/footer.html')
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+</body>
+
+</html>

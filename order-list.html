@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ?? Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- ?? icons -->
+    <link href="/libs/icons/feather/feather-icons.min.css" rel="stylesheet">
+    <!-- ?? Perfect scrollbar -->
+    <link href="/libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- ?? Swiper-->
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css" />
+    <!-- ?? CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <title>
+        AdBuild | Order list
+    </title>
+</head>
+
+<body id="page-top">
+
+    <div id="navbar">
+
+    </div>
+    <section id="main_content">
+        <!-- ?? Breadcrumb -->
+        <div class="container">
+            <h6 class="text-body fw-bold my-4">
+                <span class="fw-normal">Home </span> / Order list
+            </h6>
+        </div>
+        <!-- ?? Breadcrumb -->
+        <!-- ?? row Start-->
+        <div class="container">
+            <div class="row mb-5 ">
+                <div class="col-12">
+                    <div class="card rounded-6px">
+                        <div class="card-body d-grid">
+
+                            <div class="d-flex align-items-center flex-wrap flex-md-nowrap gap-2 pt-2 pb-16px">
+                                <h4 class="fw-bolder text-primary col-12 col-md-8">Order list</h4>
+
+                                <div class="col-6 col-md-2">
+                                    <label class="form-label mb-2">Search</label>
+                                    <div class="input-group custom-input-group">
+                                        <span class="input-group-text border-0 feather icon-feather-search"
+                                            id="addon-wrapping"></span>
+                                        <input type="text" class="form-control border-0 ps-0"
+                                            placeholder="Quick search by id">
+                                    </div>
+                                </div>
+
+                                <div class="col-5 col-md-2 pe-0 pe-md-16px">
+                                    <label class="form-label mb-2">Status</label>
+
+                                    <select
+                                        class="form-select custom-form-control text-dark fs-0_875rem py-10px rounded-6px"
+                                        aria-label="Default select example">
+                                        <option selected>On Hold</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="table-responsive w-100">
+                                <table class="table table-striped table-hover  table-borderless d-block d-md-table">
+                                    <thead
+                                        class="table-light pointer d-none d-md-table-header-group border-0 text-gray-700">
+                                        <tr>
+                                            <th scope="col" class="py-3">
+                                                Order ID
+                                            </th>
+                                            <th scope="col" class="py-3">
+                                                Date
+                                            </th>
+                                            <th scope="col" class="py-3">
+                                                Status
+                                            </th>
+                                            <th scope="col" class="py-3">
+                                                Customer
+                                            </th>
+                                            <th scope="col" class="py-3">
+                                                Purchased
+                                            </th>
+                                            <th scope="col" class="py-3">
+                                                Total
+                                            </th>
+                                            <th scope="col" class="py-3">
+                                                Options
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cart_row" class="d-block d-md-table-header-group">
+                                        <tr class="d-block border-0  border-bottom border-2 border-bottom-md-0  d-md-table-row pointer"
+                                            data-bs-toggle="modal" data-bs-target="#order_details">
+
+                                            <td
+                                                class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Order ID :
+                                                </span>
+                                                <span>
+                                                    #95954
+                                                </span>
+                                            </td>
+                                            <td
+                                                class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Date :
+                                                </span>
+                                                <span>
+                                                    Jun 4, 2020
+                                                </span>
+                                            </td>
+                                            <td class="d-flex align-items-center align-middle d-md-table-cell">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Status :
+                                                </span>
+                                                <span
+                                                    class="badge fs-6 rounded-5 d-inline-flex align-items-center gap-5px bg-outline-success">
+                                                    <span class="rounded-circle bg-success"
+                                                        style="width: 8px; height: 8px;"></span>
+                                                    <span class="text-success fs-0_875rem">Delivered</span>
+                                                </span>
+                                            </td>
+                                            <td
+                                                class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Customer :
+                                                </span>
+                                                <span>
+                                                    Arnold Armstrong
+                                                </span>
+                                            </td>
+                                            <td
+                                                class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Purchased :
+                                                </span>
+                                                <span>
+                                                    3 Items
+                                                </span>
+                                            </td>
+                                            <td
+                                                class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Total :
+                                                </span>
+                                                <span>
+                                                    $ 249.75
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 text-start">
+
+
+                                                <button title="Save"
+                                                    class="btn p-5px d-inline-flex align-items-center btn-sm btn-outline-dark">
+                                                    <span class="feather  icon-feather-download-cloud fs-18px"></span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ?? row End-->
+        <!-- ?? pagination row Start-->
+        <div class="container mt-3">
+            <div aria-label="Page  navigation example" class="card">
+                <div class="card-body px-0 px-md-4">
+                    <ul class="pagination mb-0 flex-wrap justify-content-center align-items-center gap-2">
+                        <li class="page-item">
+                            <a href="#" aria-label="Previous" class="page-link">
+                                <span aria-hidden="true" class="feather icon-feather-chevron-left fs-20px ms-1"></span>
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+
+                            <a href="#" class="page-link">
+                                <span class="">1</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+
+                            <a href="#" class="page-link p-2 cat-active">
+                                <span class="">2</span>
+                            </a>
+                        </li>
+
+                        <li class="page-item">
+
+
+                            <a href="#" class="page-link">
+                                <span class="">3</span>
+                            </a>
+                        </li>
+
+
+                        <li class="page-item">
+
+                            <a href="#" aria-label="Next" class="page-link">
+                                <span aria-hidden="true" class="feather icon-feather-chevron-right fs-20px ms-1"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- ?? pagination row End-->
+
+
+        <!-- ?? Order Details Model Start-->
+        <div class="modal fade" id="order_details" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="order_detailsLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <div class="d-flex flex-column justify-content-center align-items-start">
+                            <div class="d-flex align-items-start gap-16px">
+                                <h4 class="fw-bolder text-primary">Order #95954</h4>
+                                <button
+                                    class="d-flex align-items-center justify-content-center gap-5px rounded-5 btn bg-outline-success">
+                                    <span class="rounded-circle bg-success" style="width: 8px; height: 8px;"></span>
+                                    <p class="text-success fs-0_875rem">Delivered</p>
+                                </button>
+                            </div>
+                            <p>Date: Jun 4, 2020</p>
+                        </div>
+                        <a type="button"
+                            class="feather icon-feather-x-circle fs-1_6rem text-gray-700 text-decoration-none"
+                            data-bs-dismiss="modal" aria-label="Close"></a>
+                    </div>
+                    <hr class="mx-16px">
+                    <div class="modal-body">
+
+                        <div class="table-responsive w-100">
+                            <table class="table d-block d-md-table">
+                                <thead
+                                    class="d-none d-md-table-header-group border-0 border-bottom border-1 border-body text-body">
+                                    <tr>
+                                        <th scope="col">
+                                            Quantity
+                                        </th>
+                                        <th scope="col">
+                                            Product
+                                        </th>
+                                        <th scope="col">
+                                            Price
+                                        </th>
+                                        <th scope="col">
+                                            Tax
+                                        </th>
+                                        <th class="text-md-end" scope="col">
+                                            Total
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cart_products" class="d-block d-md-table-header-group">
+                                    <tr
+                                        class="d-block border-0  border-bottom border-1  border-bottom-md-0 py-md-3 d-md-table-row">
+
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Quantity
+                                            </span>
+                                            <span>
+                                                2X
+                                            </span>
+                                        </td>
+
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="/assets/images/img/Cards/product-price-top/2.png"
+                                                    class="object-cover" style="width: 60px;height: 60px;" alt="">
+                                                <p>
+                                                    Herschel Leather Duffle Bag In Brown Color
+                                                </p>
+                                            </div>
+                                        </td>
+
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Price
+                                            </span>
+                                            <span>
+                                                $ 140.00
+                                            </span>
+                                        </td>
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Tax
+                                            </span>
+                                            <span>
+                                                $ 7.00
+                                            </span>
+                                        </td>
+                                        <td
+                                            class="align-middle d-block text-md-end d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Total
+                                            </span>
+                                            <span>
+                                                $ 294.00
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr
+                                        class="d-block border-0  border-bottom border-1  border-bottom-md-0 py-md-3 d-md-table-row">
+
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Quantity
+                                            </span>
+                                            <span>
+                                                2X
+                                            </span>
+                                        </td>
+
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <img src="/assets/images/img/Cards/product-price-top/2.png"
+                                                    class="object-cover" style="width: 60px;height: 60px;" alt="">
+                                                <p>
+                                                    Herschel Leather Duffle Bag In Brown Color
+                                                </p>
+                                            </div>
+                                        </td>
+
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Price
+                                            </span>
+                                            <span>
+                                                $ 140.00
+                                            </span>
+                                        </td>
+                                        <td
+                                            class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Tax
+                                            </span>
+                                            <span>
+                                                $ 7.00
+                                            </span>
+                                        </td>
+                                        <td
+                                            class="align-middle d-block text-md-end d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                            <span class="d-md-none me-1">
+                                                Total
+                                            </span>
+                                            <span>
+                                                $ 294.00
+                                            </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr
+                                        class="d-block border-0  border-bottom-0  border-bottom-lg-1 py-md-3 d-md-table-row">
+
+
+                                        <td colspan="5"
+                                            class="align-middle text-md-end d-block border-bottom-0 d-md-table-cell py-2 py-md-3 fw-bold text-gray-700">
+                                            <span class=" me-1">
+                                                Total order amount
+                                            </span>
+                                            <span>
+                                                $ 384.00
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-start">
+                            <h6 class="fw-bold">Address</h6>
+
+                            <div class="d-flex p-16px align-items-start gap-2">
+                                <div class="d-flex align-items-center justify-content-center p-2">
+                                    <span class="feather icon-feather-home fs-1_6rem text-gray-700"></span>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <h6 class="fw-bold">Home</h6>
+                                    <p>20th main roud Shekh zayed roud, Dubai, United Arab Emirates</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex flex-column align-items-start">
+                            <h6 class="fw-bold">Payment Method</h6>
+
+                            <div class="d-flex p-16px align-items-center gap-2">
+                                <div class="d-flex align-items-center justify-content-center p-2 border rounded-6px">
+                                    <svg width="46" height="29" viewBox="0 0 46 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.3945 24.976C21.0114 27.0325 17.92 28.274 14.5421 28.274C7.00474 28.274 0.894531 22.0929 0.894531 14.4681C0.894531 6.84325 7.00474 0.662109 14.5421 0.662109C17.92 0.662109 21.0114 1.90361 23.3945 3.96017C25.7777 1.90361 28.869 0.662109 32.247 0.662109C39.7843 0.662109 45.8945 6.84325 45.8945 14.4681C45.8945 22.0929 39.7843 28.274 32.247 28.274C28.869 28.274 25.7777 27.0325 23.3945 24.976Z"
+                                            fill="#ED0006" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.3945 24.976C26.3289 22.4437 28.1896 18.6757 28.1896 14.4681C28.1896 10.2604 26.3289 6.49244 23.3945 3.96017C25.7777 1.90361 28.869 0.662109 32.247 0.662109C39.7843 0.662109 45.8945 6.84325 45.8945 14.4681C45.8945 22.0929 39.7843 28.274 32.247 28.274C28.869 28.274 25.7777 27.0325 23.3945 24.976Z"
+                                            fill="#F9A000" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.3927 3.96045C26.327 6.49272 28.1877 10.2607 28.1877 14.4683C28.1877 18.6759 26.327 22.4439 23.3927 24.9762C20.4583 22.4439 18.5977 18.6759 18.5977 14.4683C18.5977 10.2607 20.4583 6.49272 23.3927 3.96045Z"
+                                            fill="#FF5E00" />
+                                    </svg>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <h6 class="fw-bold">Master Card</h6>
+                                    <p>Mohamed Gamal / Expired: May 30, 2028</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex flex-column align-items-start">
+                            <h6 class="fw-bold">Review</h6>
+
+                            <div class="d-flex p-16px align-items-center gap-2">
+                                <div class="d-flex flex-column p-16px gap-20px bg-body rounded-6px">
+                                    <div class="ratings">
+                                        <i class="feather icon-feather-star-on"></i>
+                                        <i class="feather icon-feather-star-on"></i>
+                                        <i class="feather icon-feather-star-on"></i>
+                                        <i class="feather icon-feather-star-on"></i>
+                                        <i class="feather icon-feather-star"></i>
+
+                                        <small class="align-middle">
+                                            4.5
+                                        </small>
+                                    </div>
+                                    <p>The table I ordered looks like the picture, but the quality is horrible. Very
+                                        disappointing to see a crack on the top and chipped bottom end of table. Very
+                                        cheaply made. I assembled it without instructions. Which was easy but have never
+                                        seen a product without instructions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ?? Order Details Model End-->
+    </section>
+    <div id="footer">
+
+    </div>
+
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.js"></script>
+
+
+
+    <script>
+
+        let arr = [
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'On Hold',
+                    statusColor: 'warning',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'Delivered',
+                    statusColor: 'success',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'On Hold',
+                    statusColor: 'warning',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'Canceled',
+                    statusColor: 'danger',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'On Hold',
+                    statusColor: 'warning',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'Canceled',
+                    statusColor: 'danger',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'On Hold',
+                    statusColor: 'warning',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'Delivered',
+                    statusColor: 'success',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'On Hold',
+                    statusColor: 'warning',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'On Hold',
+                    statusColor: 'warning',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+            {
+                orderId: '#95954',
+                date: 'Jun 4, 2020',
+                status: {
+                    statusName: 'Canceled',
+                    statusColor: 'danger',
+                },
+                customer: 'Arnold Armstrong',
+                purchased: '3 Items',
+                total: '$ 249.75',
+            },
+        ]
+
+        for (let i = 0; i < arr.length; i++) {
+            $('#cart_row').append(`<tr data-bs-toggle="modal" data-bs-target="#order_details"
+                                            class="d-block pointer border-0  border-bottom border-2  border-bottom-md-0 py-md-3 d-md-table-row">
+
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Order ID :
+                                                </span>
+                                                <span>
+                                                    ${arr[i].orderId}
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Date :
+                                                </span>
+                                                <span>
+                                                    ${arr[i].date}
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Status :
+                                                </span>
+                                                <span class="badge fs-6 rounded-5 d-inline-flex align-items-center gap-5px bg-outline-${arr[i].status.statusColor}">
+                                                    <span class="rounded-circle bg-${arr[i].status.statusColor}"
+                                                        style="width: 8px; height: 8px;"></span>
+                                                    <span class="text-${arr[i].status.statusColor} fs-0_875rem">
+                                                        ${arr[i].status.statusName}
+                                                        </span>
+                                                </span>
+                                               
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Customer :
+                                                </span>
+                                                <span>
+                                                    ${arr[i].customer}
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Purchased :
+                                                </span>
+                                                <span>
+                                                    ${arr[i].purchased}
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 border-bottom-0 border-bottom-lg">
+                                                <span class="d-md-none me-1 fw-bold">
+                                                    Total :
+                                                </span>
+                                                <span>
+                                                    ${arr[i].total}
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell py-md-3 text-start">
+                                              
+
+                                                <button title="Save"
+                                                    class="btn p-5px d-inline-flex align-items-center btn-sm btn-outline-dark">
+                                                    <span class="feather  icon-feather-download-cloud fs-18px"></span>
+                                                </button>
+                                            </td>
+                                        </tr>`)
+        }
+    </script>
+
+
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+    <script>
+        $('#navbar').load('/components/navbar.html')
+        $('#footer').load('/components/footer.html')
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+</body>
+
+</html>

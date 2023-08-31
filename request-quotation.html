@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ?? Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- ?? icons -->
+    <link href="/libs/icons/feather/feather-icons.min.css" rel="stylesheet">
+    <!-- ?? Perfect scrollbar -->
+    <link href="/libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- ?? CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <title>
+        AdBuild | Request a Quotation
+    </title>
+</head>
+
+<body id="page-top">
+
+    <div id="navbar">
+
+    </div>
+    <section id="main_content">
+        <div class="w-100 d-none d-lg-block"
+            style="background-image: url(/assets/images/img/request-quotation.png); background-repeat: no-repeat; background-size: cover; background-position: center ; height:233px;">
+
+        </div>
+
+        <!-- ?? Row Start -->
+        <div class="mt-5 mt-lg--120px col-12 col-lg-8 m-auto">
+            <!-- custom-form-control -->
+            <div class="d-flex flex-column align-items-center rounded-6px bg-white gap-16px p-4">
+                <div>
+                    <h4 class="text-primary fw-bolder">Request a Quotation</h4>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 g-16px align-self-stretch">
+                    <div class="d-flex flex-column gap-16px">
+                        <div>
+                            <label for="name" class="form-label mb-2">Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-form-control" id="name" placeholder="Name:">
+                        </div>
+
+                        <div>
+                            <label for="mobile" class="form-label mb-2">Mobile Number: <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-form-control" id="mobile"
+                                placeholder="EX.+2 0155 2 77 66 20">
+                        </div>
+                        <div>
+                            <label for="email" class="form-label mb-2">Email: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-form-control" id="email"
+                                placeholder="Email: ">
+                        </div>
+
+                        <div>
+                            <label for="productDetails" class="form-label mb-2">Required Product Details /
+                                Summary: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-form-control" id="productDetails"
+                                placeholder="Details / Summary">
+                        </div>
+                        <div>
+                            <label for="reqBrand" class="form-label mb-2">Required Brand: <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-form-control" id="reqBrand"
+                                placeholder="Required Brand:">
+                        </div>
+
+                        <div>
+                            <label for="reqQuantity" class="form-label mb-2">Required Quantity: <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control custom-form-control" id="reqQuantity"
+                                placeholder="Required Quantity:">
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column gap-16px">
+                        <div>
+                            <label for="message" class="form-label mb-2">Message: <span
+                                    class="text-danger">*</span></label>
+                            <textarea class="form-control custom-form-control" id="message" rows="11"
+                                placeholder="Paragraph Text Here"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="" class="form-label">Attachments: (.jpg, .png, .pdf): <span
+                                    class="text-danger">*</span></label>
+                            <div class="p-3 border rounded-3">
+                                <div class="file-drop-area">
+                                    <img class="icon" src="/assets/images/svg/Upload.svg" alt="">
+
+                                    <span class="file-msg text-info">OR upload a file</span>
+                                    <input class="file-input" type="file" multiple="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <a href="#" class="btn btn-primary w-100">Submit</a>
+            </div>
+
+        </div>
+        <!-- ?? Row End-->
+    </section>
+    <div id="footer">
+
+    </div>
+
+
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.js"></script>
+    <script>
+        var fileInput = $('.file-input');
+        var droparea = $('.file-drop-area');
+
+        // highlight drag area
+        fileInput.on('dragenter focus click', function () {
+            droparea.addClass('is-active');
+        });
+
+        // back to normal state
+        fileInput.on('dragleave blur drop', function () {
+            droparea.removeClass('is-active');
+        });
+ 
+        // change inner text
+        fileInput.on('change', function () {
+            var filesCount = $(this)[0].files.length;
+            var textContainer = $(this).prev();
+
+            if (filesCount === 1) {
+                // if single file is selected, show file name
+                var fileName = $(this).val().split('\\').pop();
+                textContainer.text(fileName);
+            } else {
+                // otherwise show number of files
+                textContainer.text(filesCount + ' files selected');
+            }
+        });
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+    <script>
+        $('#navbar').load('/components/navbar.html')
+        $('#footer').load('/components/footer.html')
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+
+</body>
+
+</html>

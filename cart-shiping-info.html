@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ?? Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- ?? icons -->
+    <link href="/libs/icons/feather/feather-icons.min.css" rel="stylesheet">
+    <!-- ?? Perfect scrollbar -->
+    <link href="/libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- ?? Swiper-->
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css" />
+    <!-- ?? CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <title>
+        AdBuild | Cart
+    </title>
+</head>
+
+<body id="page-top">
+
+    <div id="navbar">
+
+    </div>
+    <section id="main_content">
+        <!-- ?? cart header -->
+        <div class="container">
+            <div class="wizard_indicator my-60px">
+                <div class="wizard_item done">
+                    <span class="icon abicon-bag">
+
+                    </span>
+                    <span class="text">1.My cart</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item active">
+                    <span class="icon abicon-Car-Delivery">
+
+                    </span>
+                    <span class="text">2. Shipping info</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item">
+                    <span class="icon abicon-card-pos">
+
+                    </span>
+                    <span class="text">3. Payment</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item">
+                    <span class="icon abicon-tick-circle">
+
+                    </span>
+                    <span class="text">4. Complete</span>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- ?? cart header -->
+
+        <!-- ?? row Start-->
+        <div class="container">
+            <div class="row   mb-5">
+                <div class="col-12 col-lg-9">
+                    <div class="card rounded-6px">
+                        <div class="card-body d-grid">
+                            <!-- ?? Home -->
+                            <label for="delivery_radios1"
+                                class="mb-20px radion_check_label p-16px user-select-none d-flex flex-wrap justify-content-end gap-2 justify-content-md-between align-items-center">
+                                <div class="form-check align-items-center d-md-flex gap-3">
+                                    <input class="form-check-input" type="radio" name="delivery_radios"
+                                        id="delivery_radios1">
+                                    <div class="form-check-label gap-3 d-flex align-items-center">
+                                        <span class="feather d-none d-md-inline icon-feather-home fs-1_6rem"></span>
+                                        <div>
+                                            <h6 class="fw-bold">Home</h6>
+                                            <p class="text-gray-600">20th main roud Shekh zayed roud, Dubai, United Arab
+                                                Emirates</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-icon  d-inline-flex align-items-center  btn-outline-primary">
+                                        <span class="icon  abicon-edit">
+                                            <span class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span>
+                                        </span>
+                                    </button>
+                                    <button
+                                        class="btn btn-icon  d-inline-flex align-items-center text-danger btn-outline-danger">
+                                        <span class="icon  abicon-trash">
+                                            <span class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span><span class="path4"></span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </label>
+                            <!-- ?? Work -->
+                            <label for="delivery_radios_work"
+                                class="mb-20px radion_check_label p-16px user-select-none d-flex flex-wrap justify-content-end gap-2 justify-content-md-between align-items-center">
+                                <div class="form-check align-items-center d-md-flex gap-3">
+                                    <input class="form-check-input" type="radio" name="delivery_radios"
+                                        id="delivery_radios_work">
+                                    <div class="form-check-label gap-3 d-flex align-items-center">
+                                        <span class="feather d-none d-md-inline icon-feather-briefcase fs-1_6rem"></span>
+                                        <div>
+                                            <h6 class="fw-bold">Work</h6>
+                                            <p class="text-gray-600">20th main roud Shekh zayed roud, Dubai, United Arab
+                                                Emirates</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-icon  d-inline-flex align-items-center  btn-outline-primary">
+                                        <span class="icon  abicon-edit">
+                                            <span class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span>
+                                        </span>
+                                    </button>
+                                    <button
+                                        class="btn btn-icon  d-inline-flex align-items-center text-danger btn-outline-danger">
+                                        <span class="icon  abicon-trash">
+                                            <span class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span><span class="path4"></span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </label>
+                            <!-- ?? Local Pickup -->
+                            <label for="delivery_radios_local_pickup"
+                                class="mb-20px radion_check_label p-16px user-select-none d-flex flex-wrap justify-content-end gap-2 justify-content-md-between align-items-center">
+                                <div class="form-check align-items-start d-md-flex gap-3">
+                                    <input class="form-check-input" type="radio" name="delivery_radios"
+                                        id="delivery_radios_local_pickup">
+                                    <div class="form-check-label gap-3 d-flex align-items-start">
+                                        <div>
+                                            <h6 class="fw-bold mb-2">Local Pickup</h6>
+                                            <div class="mb-2">
+                                                <label for="" class="form-label"> Select your nearest pickup
+                                                    point</label>
+                                                <select class="form-select rounded-6px" name="" id="">
+                                                    <option selected>Select one</option>
+                                                    <option value="">New Delhi</option>
+                                                    <option value="">Istanbul</option>
+                                                    <option value="">Jakarta</option>
+                                                </select>
+                                            </div>
+                                            <div class="p-15px rounded-6px bg-gray-80">
+                                                <h6 class="fw-bold">
+                                                    ADbuild Show Room
+                                                </h6>
+                                                <p>
+                                                    Mussafah M9, 8th Street, AD Build Bldg, Abu Dhabi, UAE
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-icon  d-inline-flex align-items-center  btn-outline-primary">
+                                        <span class="icon  abicon-edit">
+                                            <span class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span>
+                                        </span>
+                                    </button>
+                                    <button
+                                        class="btn btn-icon  d-inline-flex align-items-center text-danger btn-outline-danger">
+                                        <span class="icon  abicon-trash">
+                                            <span class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span><span class="path4"></span>
+                                        </span>
+                                    </button>
+                                </div>
+
+                            </label>
+                            <!--?? ======== ?? Add location  =============-->
+                            <a data-bs-toggle="modal" data-bs-target="#add_location_modal"
+                                class=" p-16px text-decoration-none user-select-none">
+
+                                <div class="form-check-label gap-3 d-flex align-items-center">
+                                    <span class="feather d-none d-md-inline icon-feather-plus fs-1_6rem"></span>
+                                    <div>
+                                        <h6 class="fw-bold">Add New Location</h6>
+                                        <p class="text-gray-600">
+                                            Lorazepam may increase the risk of serious or life-threatening.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card sticky-lg-top  rounded-6px">
+                        <div class="card-body">
+                            <div
+                                class="d-flex border-bottom pb-3 mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Subtotal
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $316.80
+                                </span>
+                            </div>
+
+                            <div class="d-flex mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Tax Total
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $114.50
+                                </span>
+                            </div>
+
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Add Coupon Code"
+                                    aria-label="Button" aria-describedby="">
+                                <button class="btn btn-outline-primary" type="button" id="">
+                                    Add
+                                </button>
+                            </div>
+
+
+                            <div
+                                class="d-flex border-bottom pb-3 mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Coupon Offer
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    -$431.30
+                                </span>
+                            </div>
+                            <div class="d-flex mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Total
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $1431.30
+                                </span>
+                            </div>
+
+                            <div>
+                                <a href="/cart-choose-payment.html" class="btn btn-lg mb-3 btn-primary w-100">
+                                    Continue to payment
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- ?? row End-->
+
+        <!-- ?? Add Location Model Start-->
+        <div class="modal fade" id="add_location_modal"  data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="add_location_modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title text-primary" id="add_location_modalLabel">
+                            Add New Location
+                        </h5>
+                        <a type="button"
+                            class="feather icon-feather-x-circle fs-1_6rem text-gray-700 text-decoration-none"
+                            data-bs-dismiss="modal" aria-label="Close"></a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row gy-16px">
+                            <div class="col-12 col-lg-6">
+                                <label for="country" class="form-label mb-2">
+                                    Country
+                                </label>
+                                <input type="text" class="form-control custom-form-control" id="country"
+                                    placeholder="Jordan">
+
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label for="state" class="form-label mb-2">
+                                    State
+                                </label>
+                                <input type="text" class="form-control custom-form-control" id="state"
+                                    placeholder="Zarqa">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label for="city" class="form-label mb-2">
+                                    City
+                                </label>
+                                <input type="text" class="form-control custom-form-control" id="city"
+                                    placeholder="Aqaba">
+                            </div>
+
+
+
+                            <div class="col-12 col-lg-6">
+                                <label for="phone" class="form-label mb-2">
+                                    Phone
+                                </label>
+                                <input type="text" class="form-control custom-form-control" id="phone"
+                                    placeholder="+971">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">
+                                    Address
+                                </label>
+                                <textarea class="form-control custom-form-control" id="address"
+                                    placeholder="Write your address" rows="3"></textarea>
+                            </div>
+                            <div class="w-100">
+                                <div id="map_drag" style="height: 220px;"></div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label for="Longitude" class="form-label mb-2">
+                                    Longitude
+                                </label>
+                                <input type="text" class="form-control custom-form-control" id="Longitude"
+                                    placeholder="Longitude">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label for="Latitude" class="form-label mb-2">
+                                    Latitude
+                                </label>
+                                <input type="text" class="form-control custom-form-control" id="Latitude"
+                                    placeholder="Latitude">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ?? Add Location Model End-->
+    </section>
+    <div id="footer">
+
+    </div>
+
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.js"></script>
+    <!-- ?? Google map -->
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyBaigE2H4cRPnwlhRr1LQNBTdJJZYprPqc", v: "weekly" });</script>
+    <script defer>
+        let map;
+        let marker;
+
+        async function initMap() {
+            const { Map } = await google.maps.importLibrary("maps");
+            // Set the initial map options
+            const mapOptions = {
+                center: { lat: -34.397, lng: 150.644 }, // Replace with your desired initial latitude and longitude
+                zoom: 15,
+                disableDefaultUI: true, // Hide all default UI controls
+                zoomControl: true, // Set to false if you want to hide only the zoom control
+            };
+
+            map = new Map(document.getElementById("map_drag"), mapOptions);
+
+            // Place the initial marker
+            let marker = null;
+
+
+
+            // Try to get the user's current location
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function (position) {
+                        const userLocation = {
+                            lat: position.coords.latitude,
+                            lng: position.coords.longitude,
+                        };
+                        map.setCenter(userLocation);
+
+                        // Optionally, you can add a marker to show the user's location
+                        marker = new google.maps.Marker({
+                            position: userLocation,
+                            map: map,
+                            title: "Your Location",
+                            draggable: true, // Make the marker draggable
+                        });
+
+                        listenMarker();
+                    },
+                    function (error) {
+                        console.error("Error getting user location:", error.message);
+                        marker = new google.maps.Marker({
+                            position: mapOptions.center,
+                            map: map,
+                            draggable: true, // Make the marker draggable
+                        });
+                        listenMarker();
+                    }
+                );
+            } else {
+                console.error("Geolocation is not supported by this browser.");
+                // Place the initial marker
+                marker = new google.maps.Marker({
+                    position: mapOptions.center,
+                    map: map,
+                    draggable: true, // Make the marker draggable
+                });
+                listenMarker();
+            }
+
+            function listenMarker() {
+                // Add an event listener to update marker position when it's dragged
+                google.maps.event.addListener(marker, "dragend", function () {
+                    const newPosition = marker.getPosition();
+                    document.getElementById('Latitude').value = newPosition.lat();
+                    document.getElementById('Longitude').value = newPosition.lng();
+                });
+            }
+        }
+
+        initMap();
+    </script>
+    <!-- ?? Google map -->
+    <script>
+        $("[type=radio]").click(function (ev) {
+            $('.radion_check_label').removeClass('checked');
+            $(this).closest(".radion_check_label").addClass("checked", this.checked);
+
+        })
+    </script>
+
+
+
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+    <script>
+        $('#navbar').load('/components/navbar.html')
+        $('#footer').load('/components/footer.html')
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ?? Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- ?? icons -->
+    <link href="/libs/icons/feather/feather-icons.min.css" rel="stylesheet">
+    <!-- ?? Perfect scrollbar -->
+    <link href="/libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- ?? CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <title>
+        AdBuild | Create new account
+    </title>
+</head>
+
+<body id="page-top">
+
+    <div id="navbar">
+
+    </div>
+    <section id="main_content">
+
+        <!-- ?? Start -->
+        <div class="d-flex justify-content-center bg-light">
+            <div class="col-12 col-lg-8 d-none d-lg-inline">
+                <img src="/assets/images/img/sign-in-bg.png" class="w-100  object-cover sticky-top"  alt="">
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="d-flex bg-white flex-column justify-content-center align-items-center py-40px px-4 px-lg-5 gap-5">
+                    <div class="d-flex flex-column align-items-start gap-3 w-100 row-cols-1">
+                        <div>
+                            <label class="form-label mb-2">Country/Region:</label>
+
+                            <select
+                                class="form-select custom-form-control text-dark fs-0_875rem py-10px rounded-6px"
+                                aria-label="Default select example">
+                                <option selected>EX. Egypt</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label mb-2">Email Address:</label>
+                            <div class="input-group custom-input-group">
+                                <span class="input-group-text border-0 feather icon-feather-mail"
+                                    id="addon-wrapping"></span>
+                                <input type="email" class="form-control border-0 ps-0"
+                                    placeholder="Your Email Address Or Phone Number">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label mb-2">Login Password:</label>
+                            <div class="input-group custom-input-group">
+                                <span class="input-group-text border-0 feather icon-feather-lock"></span>
+                                <input id="passwordInput" type="password" class="form-control border-0 ps-0"
+                                    placeholder="Password">
+                                <span id="showHidePassword"
+                                    class="input-group-text border-0 feather icon-feather-eye-off pointer"></span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="form-label mb-2">Confirm Password:</label>
+                            <div class="input-group custom-input-group">
+                                <span class="input-group-text border-0 feather icon-feather-lock"></span>
+                                <input id="passwordInput02" type="password" class="form-control border-0 ps-0"
+                                    placeholder="Password">
+                                <span id="showHidePassword02"
+                                    class="input-group-text border-0 feather icon-feather-eye-off pointer"></span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="exampleFormControlInput1" class="form-label mb-2">Company Name:</label>
+                            <input type="text" class="form-control custom-form-control" id="exampleFormControlInput1"
+                                placeholder="Company Name:">
+                        </div>
+
+                        <div>
+                            <label class="form-label mb-2">Full name:</label>
+                            <div class="input-group justify-content-between">
+                                <input type="text" class="form-control custom-form-control rounded-6px me-3"
+                                    placeholder="First">
+
+                                <input type="text" class="form-control custom-form-control rounded-6px"
+                                    placeholder="Last">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="exampleFormControlInput2" class="form-label mb-2">Tel:</label>
+                            <input type="text" class="form-control custom-form-control" id="exampleFormControlInput2"
+                                placeholder="EX.+2 0155 2 77 66 20">
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2">
+                            <input type="checkbox" class="col-1 form-check-input" id="agree_policies">
+                            <label for="agree_policies" class="lh-lg small">
+                                I agree to 
+                                <p class="d-inline">
+                                    <a class="text-decoration-none text-primary mb-2" href="#">Free Membership Agreement</a>,
+                                </p>
+                                <p class="d-inline">
+                                     <a class="text-decoration-none text-primary mb-2" href="#">Terms of Use</a>, 
+                                </p>
+                                <p class="d-inline">
+                                     <a class="text-decoration-none text-primary mb-2" href="#">Privacy Policy.</a> 
+                                </p>
+                              
+                            </label>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <input type="checkbox" class="col-1 form-check-input" id="agree_notifications">
+                            <label for="agree_notifications" class="lh-lg small">
+                               
+                                <p class="d-block">
+                                    I agree to receive more information from Alibaba.com about its products and services.
+
+                                </p>
+                            </label>
+                        </div>
+                    </div>
+
+                    <a href="index.html" class="btn btn-primary w-100">Register</a>
+                </div>
+            </div>
+        </div>
+        <!-- ?? End -->
+
+    </section>
+    <div id="footer">
+
+    </div>
+
+
+ 
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.js"></script>
+
+    <script>
+        const showHidePassword = document.getElementById('showHidePassword');
+        const passwordInput = document.getElementById('passwordInput');
+
+        showHidePassword.addEventListener("click", function () {
+            if (passwordInput.type == 'password') {
+                passwordInput.type = 'text'
+                showHidePassword.classList.replace('icon-feather-eye-off', 'icon-feather-eye')
+            } else {
+                passwordInput.type = 'password'
+                showHidePassword.classList.replace('icon-feather-eye', 'icon-feather-eye-off')
+            }
+        });
+
+    </script>
+
+    <script>
+        const showHidePassword02 = document.getElementById('showHidePassword02');
+        const passwordInput02 = document.getElementById('passwordInput02');
+
+        showHidePassword02.addEventListener("click", function () {
+            if (passwordInput02.type == 'password') {
+                passwordInput02.type = 'text'
+                showHidePassword02.classList.replace('icon-feather-eye-off', 'icon-feather-eye')
+            } else {
+                passwordInput02.type = 'password'
+                showHidePassword02.classList.replace('icon-feather-eye', 'icon-feather-eye-off')
+            }
+        });
+
+    </script>
+
+     <!-- !! Script for import components -- do it with blade and remove this script -->
+     <script>
+        $('#navbar').load('/components/navbar.html')
+        $('#footer').load('/components/footer.html')
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+
+</body>
+
+</html>

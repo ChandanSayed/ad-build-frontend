@@ -1,0 +1,473 @@
+/*!
+*  Magdy Elsayyad - Base theme
+* Copyright 2022-2023 Magdy Elsayyad (https://www.linkedin.com/in/magdy-elsayyad-14a086193/)
+*/
+
+
+
+@import './fonts';
+
+$primary: #00403F;
+$secondary: #E7191A;
+$success: #30D158;
+$info: #2D9CDB;
+$warning: #FF9F0A;
+$danger: #E7191A;
+$light: #EEF0F8;
+$dark: #101828;
+$cyan: #4CF4FF;
+$gray-50: #fafafa;
+$gray-80: #EAECF0;
+$gray-100: #F9FAFB;
+$gray-200: #F1F2F4;
+$gray-300: #EEEFF2;
+$gray-400: #CBD5E0;
+$gray-500: #A0AEC0;
+$gray-600: #98A2B3;
+$gray-700: #344054;
+$gray-800: #1F2937;
+$gray-900: #111827;
+$grays: ("50": $gray-50);
+$body-bg: #F5F6FA;
+$body-color: #667085;
+$black: #000;
+$white: #fff;
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "cyan": $cyan,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "white": $white,
+  "dark": $dark,
+  "black": $black,
+  "gray": $gray-300,
+  "gray-80": $gray-80,
+  "gray-700": $gray-700,
+  "gray-600": $gray-600,
+  "outline-danger":#FDBEBE4D,
+  "outline-success": rgba($success, .1),
+  "outline-warning": rgba($warning, 0.30),
+  "outline-cyan": rgba($cyan, 0.30),
+  "primary-op-80": rgba($primary, 0.80)
+);
+
+$enable-shadows: false;
+$font-family-sans-serif: 'poppins',
+sans-serif;
+$font-size-root: 14px;
+
+
+
+//
+// ?? Typography
+//
+
+$text-muted: $gray-600;
+
+$h1-font-size: 44px;
+$h2-font-size: 36px;
+$h3-font-size: 28px;
+$h4-font-size: 24px;
+$h5-font-size: 20px;
+$h6-font-size: 16px;
+// scss-docs-end font-variables
+
+// ?? Heading 
+$headings-margin-bottom: 0px;
+$headings-font-family: 'poppins',
+sans-serif;
+$headings-font-style: null;
+$headings-font-weight: 500;
+$headings-line-height: 1.3;
+$headings-color: $gray-700;
+
+$display-font-sizes: (1: 54px,
+  2: 40px,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem);
+
+$display-font-weight: bold;
+$display-line-height: 1.2;
+
+$line-height-base: 1.4;
+$line-height-sm: .8;
+$line-height-lg: 1.6;
+$lead-font-size: 22px;
+$lead-font-weight: bold;
+
+// ?? Borders
+$border-radius: 0S;
+$border-radius-sm: 2px;
+$border-radius-lg: 8px;
+$border-radius-pill: 50rem;
+$btn-border-radius: 6px;
+$btn-border-radius-sm: 6px;
+$btn-border-radius-lg: 6px;
+$badge-border-radius: 4px;
+
+// ?? buttons
+$btn-padding-y-lg: .545rem;
+// ?? input
+
+$input-group-addon-bg: transparent;
+$input-border-radius: 6px;
+$input-border-color:#EEF0F8;
+$input-placeholder-color: #98A2B3;
+$form-label-margin-bottom: 3px;
+$form-label-font-size: 0.9rem;
+$form-label-font-style: null;
+$form-label-font-weight: 400;
+$form-label-color: #344054;
+
+// ?? containers
+
+$container-max-widths: (sm: 767px,
+  md: 900px,
+  lg: 960px,
+  xl: 1440px,
+  xxl: 1600px);
+
+
+
+$spacer: 1rem;
+$spacers: (0: 0,
+  -120px: -120px,
+  -235px: -235px,
+  160px: 160px,
+  1px: 1px,
+  5px: 5px,
+  10px: 10px,
+  15px: 15px,
+  16px: 16px,
+  20px: 20px,
+  30px: 30px,
+  40px: 40px,
+  60px: 60px,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+$font-sizes: (inherit:inherit,
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  1_125rem: 1.125rem,
+  0_875rem: 0.875em,
+  0_75rem: .75rem,
+  1_25rem: 1.25rem,
+  1_6rem: 1.6rem,
+  10px: 10px,
+  12px: 12px,
+  18px: 18px,
+  20px: 20px,
+  30px: 30px,
+  40px: 40px,
+  50px: 50px,
+  60px: 60px,
+
+);
+
+$enable-caret: false;
+$link-color: $body-color;
+$link-decoration: none;
+$dropdown-link-hover-color: $primary;
+$dropdown-link-hover-bg: rgba($primary, .2);
+$dropdown-border-radius: 8px;
+
+
+// ?? Accordion
+$accordion-padding-y: 1rem;
+$accordion-padding-x: 1.25rem;
+
+
+// ?? Cards
+
+$card-border-width: 0;
+$card-title-spacer-y: 8px;
+
+// ?? Thumbnails
+$thumbnail-bg: $white;
+$thumbnail-border-width: 8px;
+$thumbnail-padding: 0;
+
+$thumbnail-border-color: $white;
+
+// ?? Check & radios
+$form-check-input-width: 24px;
+$form-check-min-height: 24px;
+$form-check-padding-start: 30px;
+$form-check-margin-bottom: 0;
+$form-check-inline-margin-end: 1rem;
+$form-check-label-color: $gray-700;
+$form-check-label-cursor: pointer;
+$form-check-transition: null;
+$form-check-input-border-radius: .30rem;
+$form-check-input-border: 1px solid rgba($gray-900, .1);
+$form-check-input-bg: #EAECF0;
+$form-check-input-focus-box-shadow: none;
+$form-check-input-focus-border:$form-check-input-border;
+
+.form-check-input {
+  margin-top: 0 !important;
+}
+
+// ?? Lists
+$list-group-color: $body-color;
+$list-group-item-padding-y: 6px;
+$list-group-item-padding-x: 8px;
+
+.list-group-item {
+  & {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid $light;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+// ?? tabs
+.nav-tabs {
+  .nav-link {
+    color: #98A2B3;
+  }
+}
+
+$nav-tabs-border-color: $gray-300;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-color: transparent transparent $gray-700 transparent;
+$nav-tabs-link-active-color: $gray-700;
+$nav-tabs-link-active-bg: transparent;
+$nav-tabs-link-active-border-color: transparent transparent $gray-700 transparent;
+
+
+// ?? Navbar
+$navbar-dark-active-color : $white;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, 1);
+
+// ?? Position
+$position-values: (0: 0,
+  10px:10px,
+  20px: 20px,
+  1rem: 1rem,
+  2rem: 2rem,
+  3rem: 3rem,
+  50: 50%,
+  100: 100%);
+
+// ?? carousel
+$carousel-control-width: 80px;
+// ?? badge
+$badge-font-weight: $font-weight-normal;
+
+// ?? Table
+$table-border-factor: .1;
+$table-border-width: 1px;
+$table-border-color: #f5f6fa66;
+$table-th-font-weight: 600;
+$table-striped-bg: #f5f6fa66;
+
+.table> :not(caption) th {
+  border-bottom-width: 0;
+}
+
+
+// ?? Border
+$border-width: 1px;
+$border-widths: (1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px);
+$border-radius-pill: 50rem;
+$border-color: $gray-300;
+
+
+$input-padding-y: 8px;
+$input-line-height: 1;
+$input-height-border: 2px;
+$input-height-inner: add($input-line-height * 1em, $input-padding-y * 2);
+$input-height-inner-half: add($input-line-height * .5em, $input-padding-y);
+$input-height-inner-quarter: add($input-line-height * .25em, $input-padding-y * .5);
+$input-height: add($input-line-height * 1em, add($input-padding-y * 2, $input-height-border, false));
+
+.form-control {
+
+
+  color: $dark !important;
+
+  // Customize the `:focus` state to imitate native WebKit styles.
+  &:focus {
+
+    @if $enable-shadows {
+      box-shadow: none !important;
+    }
+
+    @else {
+      // Avoid using mixin so we can pass custom focus shadow properly
+      box-shadow: none !important;
+    }
+  }
+
+
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+
+
+
+}
+
+// ?? ============== Custom utils =======================
+
+$utilities: ("rounded": (property: border-radius,
+    class: rounded,
+    values: (null: 4px,
+      0: 0,
+      1: 2px,
+      2: 4px,
+      6px: 6px,
+      3: 8px,
+      4: 16px,
+      5: 24px,
+      circle: 50%,
+      pill: $border-radius-pill)),
+  "display": (responsive: true,
+    print: true,
+    property: display,
+    class: d,
+    values: inline inline-block block grid table table-row table-cell flex inline-flex none table-header-group table-row-group),
+    "height": (
+      property: height,
+      responsive: true,
+      class: h,
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto,
+        100px: 100px,
+        200px: 200px,
+        250px: 250px,
+        300px: 300px,
+        350px: 350px,
+        400px: 400px,
+      )
+    ),
+  "border": (responsive: true,
+    property: border,
+    values: (null: $border-width solid $border-color,
+      0: 0,
+      dashed: $border-width dashed $border-color,
+    )),
+  "border-top": (responsive: true,
+    property: border-top,
+    values: (null: $border-width solid $border-color,
+      0: 0,
+    )),
+  "border-end": (responsive: true,
+    property: border-right,
+    class: border-end,
+    values: (null: $border-width solid $border-color,
+      0: 0,
+    )),
+  "border-bottom": (responsive: true,
+    property: border-bottom,
+    values: (null: $border-width solid $border-color,
+      0: 0,
+    )),
+  "border-start": (responsive: true,
+    property: border-left,
+    class: border-start,
+    values: (null: $border-width solid $border-color,
+      0: 0,
+    )),
+  "border-color": (responsive: true,
+    property: border-color,
+    class: border,
+    values: $theme-colors),
+  "border-width": (responsive: true,
+    property: border-width,
+    class: border,
+    values: $border-widths),
+  "max-width": (responsive: true,
+    property: max-width,
+    class: mw,
+    values: (100: 100%, 290px: 290px)),
+  "max-height": (responsive: true,
+    property: max-height,
+    class: mh,
+    values: (100: 100%, 290px: 290px, 500px: 500px)),
+  // -------------------------------
+  "position": (responsive: true,
+    print: true,
+    property: position,
+    values: static relative absolute fixed sticky),
+  "top": (responsive: true,
+    print: true,
+    property: top,
+    values: $position-values),
+  "bottom": (responsive: true,
+    print: true,
+    property: bottom,
+    values: $position-values),
+  "start": (responsive: true,
+    print: true,
+    property: left,
+    class: start,
+    values: $position-values),
+  "end": (responsive: true,
+    print: true,
+    property: right,
+    class: end,
+    values: $position-values),
+  "translate-middle": (responsive: true,
+    print: true,
+    property: transform,
+    class: translate-middle,
+    values: (null: translate(-50%, -50%),
+      x: translateX(-50%),
+      y: translateY(-50%),
+    )),
+  "z-index": (responsive: true,
+    print: true,
+    property: z-index,
+    class: z,
+    values: (2: 2,
+      3: 3,
+      4: 4,
+      5: 5,
+      10: 10,
+      50: 50,
+      500: 500,
+      1000: 1000,
+
+    )),
+
+);

@@ -1,0 +1,176 @@
+.card.image_with_content {
+    .card-body {
+        padding: 8px;
+        position: relative;
+    }
+
+    .parent {
+        & {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            background-size: cover;
+            background-position: right;
+        }
+
+        * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content {
+            padding: 30px;
+
+            .text {
+                margin-bottom: 40px;
+            }
+        }
+
+        &::before {
+            content: ' ';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            inset-inline-start: 0;
+            background: rgb(240, 240, 240);
+            background: -moz-linear-gradient(90deg, rgba(240, 240, 240, 1) 20%, rgba(198, 237, 44, 0) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(240, 240, 240, 1) 20%, rgba(198, 237, 44, 0) 100%);
+            background: linear-gradient(90deg, rgba(240, 240, 240, 1) 20%, rgba(198, 237, 44, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0", endColorstr="#c6ed2c", GradientType=1);
+        }
+    }
+}
+
+.card.image_with_content2 {
+    .card-body {
+        padding: 0;
+        position: relative;
+    }
+
+    .parent {
+        & {
+            position: relative;
+            display: flex;
+            align-items: end;
+            justify-content: start;
+            background-size: cover;
+            background-position: right;
+        }
+
+        * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .content {
+            padding: 0;
+            width: 100%;
+            .text{
+                margin-bottom: 8px;
+            }
+            
+        }
+
+        .link {
+            color: $danger;
+            text-align: center;
+            /* Heading 3 */
+            text-align: center;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36.4px;
+            /* 130% */
+            text-decoration: none;
+            width: 100%;
+            background: linear-gradient(95deg, rgba(231, 25, 26, 0.20) 0%, rgba(231, 25, 26, 0.00) 100%);
+            display: flex;
+            padding: 8px;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+
+    }
+}
+
+.card {
+    .card-header {
+        background-color: #fff;
+        color: var(--bs-primary);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.card.product_card_1 {
+    .card-body {
+        padding: 0 1rem;
+    }
+
+    .card-group {
+        .card-img-top {
+            width: 95px;
+            height: 95px;
+            object-fit: cover;
+            object-position: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 12px;
+
+
+        }
+
+        .card {
+            .card-body {
+                padding: 1.5rem;
+            }
+            @media (min-width: 578px) {
+                & {
+                    border-right: 1px solid var(--typo-color-placeholder-text-gray-80, #EAECF0);
+                    border-inline-end: 1px solid var(--typo-color-placeholder-text-gray-80, #EAECF0);
+                }
+                &:first-child {
+                    border-left: none;
+                    border-inline-start: none;
+                }
+    
+                &:last-child {
+                    border-right: none;
+                    border-inline-end: none;
+                }
+            }
+
+        }
+    }
+}
+
+.card.product_card_2 {
+    .card-body {
+        padding: 0 1rem;
+    }
+
+    .card-group {
+        .card-img-top {
+            width: 95px;
+            height: 95px;
+            object-fit: cover;
+            object-position: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 12px;
+
+
+        }
+
+        .card {
+            .card-body {
+                padding: 1.5rem;
+            }
+
+        }
+    }
+}

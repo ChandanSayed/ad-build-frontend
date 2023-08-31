@@ -1,0 +1,313 @@
+<!-- ?? ================================= Start nav bar ============================= -->
+<div>
+    <!-- ?? Top -->
+    <nav class="py-1 d-none d-lg-block border-bottom">
+        <div class="container">
+
+            <div class="row justify-content-between align-items-center">
+                <div class="d-inline-flex gap-2 col-auto">
+                    <div class="dropdown">
+                        <a class="text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            U.S. Dollar $
+                            <span class="feather icon-feather-chevron-down fs-20px ms-1"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <a class="text-decoration-none dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                            <span class="feather icon-feather-chevron-down fs-20px ms-1"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li>
+                                <a class="dropdown-item" href="#">Arabic</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    English
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- ?? right -->
+                <div class="col-auto">
+                    <p class="mb-0">
+                        <span class="feather fs-20px icon-feather-phone"></span>
+                        Help line <a class="text-decoration-none" href="tel:+0097125511633">
+                            0097125511633
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ?? Middle -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+        <div class="container">
+
+            <div class="w-100 d-flex justify-content-between align-items-center" id="navbarTogglerDemo01">
+                <a href="/home.html" class="navbar-brand col-auto ">
+                    <img src="/assets/images/logo.svg" alt="">
+                </a>
+                <div class="flex-fill px-md-4 d-none d-xl-block">
+                    <form class="d-flex" role="search">
+                        <div class="input-group">
+                            <button class="btn btn-gray shadow-none dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All
+                                <span class="feather icon-feather-chevron-down"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action before</a></li>
+                                <li><a class="dropdown-item" href="#">Another action before</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                            </ul>
+                            <input placeholder="I'm shopping for..." type="text"
+                                class="form-control bg-light border-0 shadow-none"
+                                aria-label="Text input with 2 dropdown buttons">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#image_search_modal"
+                                class="btn btn-light shadow-none">
+                                <span class="feather align-baseline icon-feather-camera"></span>
+
+                            </button>
+                            <button class="btn btn-primary shadow-none" type="button">
+                                Search
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col-auto  d-flex gap-3 gap-xxl-4 align-items-center">
+                    <ul class="list-unstyled align-items-center mb-0 d-flex gap-3 gap-lg-4">
+                        <li class="nav-item">
+
+                            <div class="">
+                                <div class="dropdown ">
+                                    <a class="text-decoration-none  d-flex gap-0 align-items-center dropdown-toggle"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="icon-feather-user align-middle me-1 feather fs-20px"></span>
+                                        <span class="d-none d-lg-inline">
+                                            Sign in
+                                        </span>
+                                    </a>
+                                    <div class="dropdown-menu right  py-5 px-4" style="min-width: 300px;"
+                                        aria-labelledby="dropdownMenuButton1">
+                                        <a href="/sign-in.html" class="btn btn-lg mb-3 w-100 btn-primary">
+                                            Sign In
+                                        </a>
+                                        <a href="/create-new-account.html" class="btn btn-lg w-100 mb-3 btn-danger">
+                                            Join for free
+                                        </a>
+                                        <div class="d-flex flex-column align-items-center gap-16px">
+                                            <p class="text-gray-700">Sign In With:</p>
+
+                                            <div class="d-flex gap-20px">
+                                                <div
+                                                    class="social_circle d-flex justify-content-center align-items-center rounded-circle pointer bg-white">
+                                                    <svg width="22" height="27" viewBox="0 0 22 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_2194_2155)">
+                                                            <path
+                                                                d="M18.314 14.2867C18.3505 18.2138 21.7591 19.5207 21.7969 19.5373C21.7681 19.6295 21.2523 21.3997 20.0011 23.2283C18.9195 24.8091 17.7969 26.3841 16.0285 26.4168C14.2909 26.4488 13.7322 25.3864 11.7456 25.3864C9.75964 25.3864 9.13886 26.3841 7.49403 26.4488C5.7871 26.5134 4.48729 24.7393 3.3967 23.1643C1.1682 19.9424 -0.534833 14.0601 1.75191 10.0895C2.88792 8.11766 4.91805 6.86901 7.12157 6.83699C8.79773 6.80502 10.3798 7.96466 11.4045 7.96466C12.4285 7.96466 14.3511 6.57009 16.3722 6.7749C17.2183 6.81012 19.5934 7.11669 21.1185 9.34903C20.9956 9.42521 18.2845 11.0035 18.314 14.2867V14.2867ZM15.0484 4.64339C15.9546 3.54644 16.5645 2.0194 16.3982 0.5C15.0919 0.552499 13.5124 1.37045 12.5754 2.46678C11.7357 3.43764 11.0004 4.99157 11.1988 6.48089C12.6547 6.59354 14.1421 5.74103 15.0484 4.64339"
+                                                                fill="black" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2194_2155">
+                                                                <rect width="21.1302" height="26" fill="white"
+                                                                    transform="translate(0.666748 0.5)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="social_circle d-flex justify-content-center align-items-center rounded-circle pointer bg-white">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_2194_10512)">
+                                                            <path
+                                                                d="M25.8925 13.7434C25.8925 12.6781 25.806 11.9008 25.619 11.0947H13.4553V15.9025H20.5951C20.4512 17.0974 19.6739 18.8967 17.9465 20.1058L17.9223 20.2668L21.7682 23.2462L22.0346 23.2728C24.4817 21.0127 25.8925 17.6875 25.8925 13.7434Z"
+                                                                fill="#4285F4" />
+                                                            <path
+                                                                d="M13.4553 26.4106C16.9532 26.4106 19.8897 25.259 22.0346 23.2726L17.9465 20.1056C16.8525 20.8686 15.3842 21.4012 13.4553 21.4012C10.0294 21.4012 7.12163 19.1413 6.0851 16.0176L5.93317 16.0305L1.93413 19.1254L1.88184 19.2708C4.01225 23.5028 8.38829 26.4106 13.4553 26.4106Z"
+                                                                fill="#34A853" />
+                                                            <path
+                                                                d="M6.08514 16.0175C5.81164 15.2114 5.65336 14.3477 5.65336 13.4552C5.65336 12.5627 5.81164 11.699 6.07075 10.893L6.0635 10.7213L2.01435 7.57666L1.88187 7.63968C1.00382 9.39587 0.5 11.368 0.5 13.4552C0.5 15.5425 1.00382 17.5145 1.88187 19.2707L6.08514 16.0175Z"
+                                                                fill="#FBBC05" />
+                                                            <path
+                                                                d="M13.4553 5.50937C15.888 5.50937 17.529 6.56018 18.4647 7.43833L22.121 3.86839C19.8754 1.78115 16.9532 0.5 13.4553 0.5C8.38829 0.5 4.01225 3.40773 1.88184 7.63978L6.07071 10.8931C7.12163 7.76938 10.0294 5.50937 13.4553 5.50937Z"
+                                                                fill="#EB4335" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2194_10512">
+                                                                <rect width="26" height="26" fill="white"
+                                                                    transform="translate(0.5 0.5)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <div
+                                                    class="social_circle d-flex justify-content-center align-items-center rounded-circle pointer bg-white">
+                                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_2194_522)">
+                                                            <path
+                                                                d="M26.5 13.5812C26.5006 11.0804 25.7885 8.63192 24.4481 6.52589C23.1076 4.41985 21.195 2.7446 18.937 1.69871C16.679 0.652817 14.1702 0.280137 11.7081 0.624844C9.24592 0.969552 6.93363 2.01719 5.0453 3.64359C3.15697 5.26998 1.77176 7.40693 1.05388 9.80114C0.335995 12.1953 0.315534 14.7464 0.994921 17.152C1.67431 19.5575 3.02506 21.7167 4.88706 23.3735C6.74906 25.0303 9.04423 26.1154 11.5005 26.5V17.3621H8.20243V13.5812H11.5005V10.7057C11.5005 7.42245 13.4107 5.61837 16.379 5.61837C17.355 5.63215 18.3287 5.71762 19.2923 5.87412V9.08828H17.6845C17.4023 9.04989 17.1153 9.0766 16.8449 9.16639C16.5746 9.25617 16.3281 9.40668 16.1242 9.6065C15.9203 9.80633 15.7642 10.0502 15.6679 10.3197C15.5716 10.5892 15.5375 10.8772 15.5682 11.1619V13.6088H19.1686L18.5983 17.3898H15.5338V26.5C18.5914 26.0128 21.3757 24.444 23.386 22.0757C25.3963 19.7075 26.5005 16.6954 26.5 13.5812Z"
+                                                                fill="#1977F3" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2194_522">
+                                                                <rect width="26" height="26" fill="white"
+                                                                    transform="translate(0.5 0.5)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 d-flex align-items-center" aria-current="page"
+                                href="/contact-us.html">
+                                <span class="icon-feather-message-circle align-middle me-1 feather fs-20px"></span>
+                                <span class="d-none d-lg-inline">
+                                    Contact Us
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 d-flex align-items-center" aria-current="page"
+                                href="/order-list.html">
+                                <span class="icon-feather-file-text align-middle me-1 feather fs-20px"></span>
+                                <span class="d-none d-lg-inline">
+                                    Orders
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link p-0 d-flex align-items-center" aria-current="page"
+                                href="/cart-products.html">
+                                <span class="icon-feather-shopping-bag align-middle me-1 feather fs-20px"></span>
+                                <span class="d-none d-lg-inline">
+                                    Cart
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ?? Bottom -->
+    <nav class="navbar navbar-light navbar-expand-lg bg-white border-bottom">
+        <div class="container">
+            <form class="d-inline-flex d-lg-none" role="search">
+                <div class="input-group">
+                    <button class="btn btn-gray shadow-none dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        All
+                        <span class="feather icon-feather-chevron-down"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action before</a></li>
+                        <li><a class="dropdown-item" href="#">Another action before</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                    </ul>
+                    <input placeholder="I'm shopping for..." type="text"
+                        class="form-control bg-light border-0 shadow-none"
+                        aria-label="Text input with 2 dropdown buttons">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#image_search_modal"
+                        class="btn btn-light shadow-none">
+                        <span class="feather align-baseline icon-feather-camera"></span>
+
+                    </button>
+                    <button class="btn btn-primary shadow-none" type="button">
+                        Search
+                    </button>
+
+                </div>
+            </form>
+            <button class="navbar-toggler border-0 shadow-none " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarBottomMenu" aria-controls="navbarBottomMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarBottomMenu">
+                <div class="col-auto mt-3 mt-lg-0">
+                    <a href="/categories.html" class="">
+                        Categories
+                    </a>
+                </div>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/all-brands.html">
+                            Brands
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/all-products.html">
+                            All products
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/services.html">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/manufacturers.html">
+                            Manufacturers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/shops.html">
+                            Shops
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/auction-home.html">
+                            Auction
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="col-auto  d-flex gap-3 gap-xxl-4 align-items-center">
+
+                    <div class="d-inline-flex gap-4 col-auto">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">
+                                    About us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">
+                                    FAQ
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- ?? ================================= End nav bar ============================= -->

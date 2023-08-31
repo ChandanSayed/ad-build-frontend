@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ?? Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- ?? icons -->
+    <link href="/libs/icons/feather/feather-icons.min.css" rel="stylesheet">
+    <!-- ?? Perfect scrollbar -->
+    <link href="/libs/perfect-scrollbar-1.5.5/css/perfect-scrollbar.css" rel="stylesheet">
+    <!-- ?? Swiper-->
+    <link rel="stylesheet" href="/libs/swiper/swiper-bundle.min.css" />
+    <!-- ?? CSS -->
+    <link href="/assets/css/style.css" rel="stylesheet">
+
+    <title>
+        AdBuild | Cart
+    </title>
+</head>
+
+<body id="page-top">
+
+    <div id="navbar">
+
+    </div>
+    <section id="main_content">
+         <!-- ?? cart header -->
+         <div class="container">
+            <div class="wizard_indicator my-60px">
+                <div class="wizard_item active">
+                    <span class="icon abicon-bag">
+
+                    </span>
+                    <span class="text">1.My cart</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item ">
+                    <span class="icon abicon-Car-Delivery">
+
+                    </span>
+                    <span class="text">2. Shipping info</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item">
+                    <span class="icon abicon-card-pos">
+
+                    </span>
+                    <span class="text">3. Payment</span>
+                </div>
+                <span class="dotted_line"></span>
+                <div class="wizard_item">
+                    <span class="icon abicon-tick-circle">
+
+                    </span>
+                    <span class="text">4. Complete</span>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- ?? cart header -->
+
+        <!-- ?? row Start-->
+        <div class="container">
+            <div class="row  mb-5 ">
+                <div class="col-12 col-lg-9">
+                    <div class="card rounded-6px">
+                        <div class="card-body d-grid">
+                            <div class="table-responsive w-100">
+                                <table class="table d-block d-md-table">
+                                    <thead class="table-light d-none d-md-table-header-group border-0 text-gray-700">
+                                        <tr>
+                                            <th scope="col">
+                                                Product
+                                            </th>
+                                            <th scope="col">
+                                                Price
+                                            </th>
+                                            <th scope="col">
+                                                Tax
+                                            </th>
+                                            <th scope="col">
+                                                Quantity
+                                            </th>
+                                            <th scope="col">
+                                                Total
+                                            </th>
+                                            <th scope="col">
+                                                Remove
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cart_products" class="d-block d-md-table-header-group">
+                                        <tr
+                                            class="d-block border-0 mb-3 mb-md-0 border-bottom border-1  border-bottom-md-none d-md-table-row">
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <div style="max-width: 350px;" class="d-flex align-items-center gap-2">
+                                                    <img src="/assets/images/img/Cards/product-price-top/2.png"
+                                                        class="object-cover" style="width: 60px;height: 60px;" alt="">
+                                                    <p>
+                                                        Herschel Leather Duffle Bag In Brown Color
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <span class="d-md-none me-1">
+                                                    Price
+                                                </span>
+                                                <span>
+                                                    $ 140.00
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <span class="d-md-none me-1">
+                                                    Tax
+                                                </span>
+                                                <span>
+                                                    $ 7.00
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <div class="d-inline-flex quantity_counter gap-2">
+                                                    <button class="btn btn-sm btn-primary minus" type="button" id="">
+                                                        <span class="feather icon-feather-minus"></span>
+                                                    </button>
+                                                    <input value="1" readonly style="width: 30px;" type="number" min="0"
+                                                        class="form-control bg-white form-control-sm fw-bold fs-1_125rem p-0 border-0 shadow-none text-center d-inline-block"
+                                                        placeholder="" aria-label="Button" aria-describedby="">
+                                                    <button class="btn btn-sm btn-primary plus" type="button" id="">
+                                                        <span class="feather icon-feather-plus"></span>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <span class="d-md-none me-1">
+                                                    Total
+                                                </span>
+                                                <span>
+                                                    $ 294.00
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell ">
+                                                <button
+                                                    class="mb-3 mb-lg-0 btn p-5px d-inline-flex align-items-center btn-sm btn-outline-danger">
+                                                    <span class="feather  icon-feather-trash-2 fs-18px"></span>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card sticky-lg-top  rounded-6px">
+                        <div class="card-body">
+                            <div
+                                class="d-flex border-bottom pb-3 mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Subtotal
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $316.80
+                                </span>
+                            </div>
+
+                            <div class="d-flex mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Tax Total
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $114.50
+                                </span>
+                            </div>
+
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Add Coupon Code"
+                                    aria-label="Button" aria-describedby="">
+                                <button class="btn btn-outline-primary" type="button" id="">
+                                    Add
+                                </button>
+                            </div>
+
+
+                            <div
+                                class="d-flex border-bottom pb-3 mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Coupon Offer
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    -$431.30
+                                </span>
+                            </div>
+                            <div class="d-flex mb-3 justify-content-between align-items-center flex-wrap">
+                                <span>
+                                    Total
+                                </span>
+                                <span class="text-dark fw-bold">
+                                    $1431.30
+                                </span>
+                            </div>
+
+                            <div>
+                                <a href="/cart-shiping-info.html" class="btn btn-lg mb-3 btn-primary w-100">
+                                    Continue to Shipping
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!-- ?? row End-->
+
+
+    </section>
+    <div id="footer">
+
+    </div>
+
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="libs/bs-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.js"></script>
+
+
+
+    <script>
+        for (let i = 0; i < 5; i++) {
+            $('#cart_products').append(`
+            <tr
+                                            class="d-block border-0  mb-3 mb-md-0 border-bottom border-1  border-bottom-md-none d-md-table-row">
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <div style="max-width: 350px;" class="d-flex align-items-center gap-2">
+                                                    <img src="/assets/images/img/Cards/product-price-top/2.png"
+                                                        class="object-cover" style="width: 60px;height: 60px;" alt="">
+                                                    <p>
+                                                        Herschel Leather Duffle Bag In Brown Color
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <span class="d-md-none me-1">
+                                                    Price
+                                                </span>
+                                                <span>
+                                                    $ 140.00
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <span class="d-md-none me-1">
+                                                    Tax
+                                                </span>
+                                                <span>
+                                                    $ 7.00
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <div class="d-inline-flex quantity_counter gap-2">
+                                                    <button class="btn btn-sm btn-primary minus" type="button" id="">
+                                                        <span class="feather icon-feather-minus"></span>
+                                                    </button>
+                                                    <input value="1" readonly style="width: 30px;" type="number" min="0"
+                                                        class="form-control bg-white form-control-sm fw-bold fs-1_125rem p-0 border-0 shadow-none text-center d-inline-block"
+                                                        placeholder="" aria-label="Button" aria-describedby="">
+                                                    <button class="btn btn-sm btn-primary plus" type="button" id="">
+                                                        <span class="feather icon-feather-plus"></span>
+                                                    </button>
+                                                </div>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell border-0 border-lg-bottom">
+                                                <span class="d-md-none me-1">
+                                                    Total
+                                                </span>
+                                                <span>
+                                                    $ 294.00
+                                                </span>
+                                            </td>
+                                            <td class="align-middle d-block d-md-table-cell">
+                                                <button
+                                                    class="mb-3 mb-lg-0 btn p-5px d-inline-flex align-items-center btn-sm btn-outline-danger">
+                                                    <span class="feather  icon-feather-trash-2 fs-18px"></span>
+                                                </button>
+                                            </td>
+                                        </tr>
+            `)
+
+        }
+    </script>
+    <script>
+        // ?? quantity_counter
+        $('.quantity_counter').on('click', '.minus', function (event) {
+            var $counter = $(event.currentTarget).closest('.quantity_counter');
+            if (+$counter.find('input').val() > 0) {
+                $counter.find('input').val(+$counter.find('input').val() - 1);
+                // ?? add here backend logic
+            }
+        });
+        $('.quantity_counter').on('click', '.plus', function (event) {
+            var $counter = $(event.currentTarget).closest('.quantity_counter');
+            $counter.find('input').val(+$counter.find('input').val() + 1);
+            // ?? add here backend logic
+        });
+
+    </script>
+
+
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+    <script>
+        $('#navbar').load('/components/navbar.html')
+        $('#footer').load('/components/footer.html')
+    </script>
+    <!-- !! Script for import components -- do it with blade and remove this script -->
+</body>
+
+</html>

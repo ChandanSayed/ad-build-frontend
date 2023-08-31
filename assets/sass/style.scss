@@ -1,0 +1,42 @@
+/*!
+*  Magdy Elsayyad - Base theme
+* Copyright 2022-2023 Magdy Elsayyad (https://www.linkedin.com/in/magdy-elsayyad-14a086193/)
+*/
+//
+// Scripts
+// 
+
+
+// Then add additional custom code here >>
+
+
+//
+// Styles
+//
+
+// Import variables
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import '../../libs/HTML5-Video-Lightbox-VideoPopup/css/videopopup.css';
+@import '../../libs/bs-5.0.2/scss/functions';
+@import './variable-override';
+
+@import '../../libs/bs-5.0.2/scss/bootstrap.scss';
+
+// Import Bootstrap
+
+
+// Global CSS 
+@import "./global.scss";
+ 
+// icons
+@import "../../libs/icons/feather/feather-icons.min.css";
+@import "../../libs/icons/adbuild-icons/style.css";
+// Components
+@import "./components/accordion";
+@import "./components/tabs";
+@import "./components/cards";
+@import "./components/carousel";
+@import "./components/buttons.scss";
+@import "./components/navbar.scss";

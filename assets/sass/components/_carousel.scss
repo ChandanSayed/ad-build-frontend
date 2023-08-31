@@ -1,0 +1,114 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 80px;
+    padding: 8px;
+    background: rgba(234, 236, 240, 0.50);
+    background-repeat: no-repeat;
+    /* background-size: ; */
+    background-position: center;
+    color: #344054;
+
+    &::after {
+        font-family: feather !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+
+    &::after {
+        content: "\e844";
+    }
+
+
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+
+    &::after {
+        content: "\e843";
+    }
+
+
+}
+
+.carousel-indicators {
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+
+
+
+.carousel-indicators [data-bs-target] {
+    width: 18px;
+    height: 18px;
+    display: block;
+    border: none !important;
+    cursor: pointer;
+    border-radius: 50%;
+    background: var(--bs-primary);
+    opacity: .5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+
+.image_carousel {
+    .thumb {
+        & {
+            height: 98px;
+            width: 98px;
+            border: 1px solid $light;
+            background: #fff;
+            cursor: pointer;
+            transition: .3s;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s;
+            opacity: .4;
+}
+
+        &:hover {
+            opacity: 1;
+            box-shadow: 2px 2px $light;
+        }
+        
+        &.active{
+            opacity: 1;
+            border-color: $primary;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

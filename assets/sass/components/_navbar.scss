@@ -1,0 +1,58 @@
+//
+// Navbar
+//
+$headings-letter-spacing: 1px;
+
+.navbar:not(.navbar-dark) {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+
+                &.active,
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+.primary-nav {
+    .navbar-toggler {
+        color: #fff;
+        border-color: transparent;
+
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        .nav-link {
+            padding: 1rem 24px;
+
+            &.active {
+                background-color: #002E2D;
+            }
+        }
+    }
+}
+
+// Responsive styling for screen width equal to or greater than the large breakpoint
+@include media-breakpoint-up(lg) {}
+
+
+.navbar-brand {
+    img {
+        height: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        img {
+            height: 35px;
+        }
+    }
+}
